@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/listformat-1.0.0.css"/>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<p class="title">您的包裹目前位于 潍坊市，请耐心等待...</p>
+			<div id="list">
+				
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/listformat-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mydata=[
+				{"day":"2017-05-01","date":"星期一","time":"05:12:15","msg":"揽收在揽收在揽收在揽收在等待揽收揽收在等待揽收揽收在等待揽收揽收在等待揽收等待揽收等待揽收揽收在等待揽收揽收在等待揽收揽收在等待揽收等待揽收","iscurrent":"false"},
+				{"day":"2017-05-01","date":"星期一","time":"06:12:15","msg":"包裹正在等待揽收","iscurrent":"false"},
+				{"day":"2017-05-01","date":"星期一","time":"07:12:15","msg":"青岛四方区收件员","iscurrent":"false"},
+				{"day":"2017-05-02","date":"星期二","time":"05:18:15","msg":"青岛四方青岛四方区收件员青岛四方区收件员青岛四方区收件员青岛四方区收件员青岛四方区收件员青岛四方区收件员青岛四方区收件员区收件员","iscurrent":"false"},
+				{"day":"2017-05-02","date":"星期二","time":"05:37:15","msg":"包裹正在等待揽收","iscurrent":"false"},
+				{"day":"2017-05-03","date":"星期三","time":"08:12:15","msg":"青岛四方区收件员","iscurrent":"false"},
+				{"day":"2017-05-03","date":"星期三","time":"09:12:15","msg":"快件已待揽收运中心发出","iscurrent":"true"}
+			];
+
+			$("#list").listformat({
+				data:mydata
+			});			
+		</script>
+		
+	</body>
+</html>
